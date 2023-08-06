@@ -1,0 +1,7 @@
+code-eol 2022
+Error Lens
+Keyboard QuickFix
+macros
+pale fire
+rust-anazlyer
+vim

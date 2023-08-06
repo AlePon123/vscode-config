@@ -1,0 +1,62 @@
+[
+    {
+        "key": "alt+f",
+        "command": "macros.focusFilesExplorerClosePanel",
+        "when": "!filesExplorerFocus && vim.mode == 'Normal' && editorTextFocus"
+    },
+    {
+        "key": "alt+f",
+        "command": "macros.closePanelCloseEditorsCloseSidebar",
+        "when": "filesExplorerFocus"
+    },
+    {
+        "key": "c f",
+        "command": "workbench.files.action.createFileFromExplorer",
+        "when": "filesExplorerFocus && vim.mode == 'Normal' && !inputFocus"
+    },
+    {
+        "key": "c p",
+        "command": "workbench.files.action.createFolderFromExplorer",
+        "when": "filesExplorerFocus && vim.mode == 'Normal' && !inputFocus"
+    },
+    {
+        "key": "d",
+        "command": "deleteFile",
+        "when": "filesExplorerFocus && vim.mode == 'Normal' && !inputFocus"
+    },
+    {
+        "key": "alt+t",
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "vim.mode == 'Normal'"
+    },
+    {
+        "key": "alt+s",
+        "command": "workbench.action.splitEditorRight",
+        "when": "vim.mode == 'Normal'"
+    },
+    {
+        "key": "c a",
+        "command": "keyboard-quickfix.openQuickFix",
+        "when": "vim.mode == 'Normal' && editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "g i",
+        "command": "editor.action.goToImplementation",
+        "when": "vim.mode == 'Normal' && editorHasImplementationProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    {
+        "key": "g d",
+        "command": "editor.action.revealDefinition",
+        "when": "vim.mode == 'Normal' && editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    {
+        "key": "k",
+        "command": "workbench.action.quickOpenSelectPrevious",
+        "when": "inQuickOpen && !editorReadonly && vim.active"
+    },
+    {
+        "key": "j",
+        "command": "workbench.action.quickOpenSelectNext",
+        "when": "inQuickOpen && !editorReadonly && vim.active"
+    },
+]
